@@ -86,7 +86,7 @@
               <div>
                 <p class="eyebrow light">The atlas</p>
                 <h2 id="atlas-title">Where the research comes from</h2>
-                <p>Select a country on the map, search for a smaller one, or open it from the ranking.</p>
+                <p>Choose a country from the list, the map or the ranking.</p>
               </div>
               <p id="freshness" class="freshness"></p>
             </div>
@@ -99,15 +99,21 @@
                 </button>
                 <ul id="stream-menu" class="stream-menu" role="listbox" aria-labelledby="stream-label" hidden></ul>
               </div>
-              <div class="country-search" id="country-search">
-                <label for="search-input">Search countries</label>
-                <input id="search-input" role="combobox" aria-expanded="false" aria-controls="search-menu" aria-autocomplete="list" placeholder="Search for a country" autocomplete="off" />
-                <ul id="search-menu" class="search-menu" role="listbox" hidden></ul>
+              <div class="country-filter" id="country-filter">
+                <label id="country-label" for="country-input">Country</label>
+                <div class="country-field">
+                  <input id="country-input" type="text" role="combobox" aria-expanded="false" aria-controls="country-menu" aria-autocomplete="list" aria-labelledby="country-label" placeholder="All countries" autocomplete="off" spellcheck="false" />
+                  <button type="button" id="country-toggle" class="country-toggle" aria-label="Show countries" tabindex="-1">
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5 10 12.5 15 7.5"/></svg>
+                  </button>
+                </div>
+                <ul id="country-menu" class="country-menu" role="listbox" aria-labelledby="country-label" hidden></ul>
               </div>
+              <button type="button" id="reset-filters" class="reset-filters" disabled>Reset filters</button>
             </div>
             <div class="explorer">
               <div class="map-shell">
-                <div id="map-frame" class="map-frame" tabindex="0" role="application" aria-roledescription="World map" aria-label="Interactive world map of abstract submissions. Use the country search or the ranking to select a country. When the map has keyboard focus, the arrow keys move between countries with submissions and Enter opens a country.">
+                <div id="map-frame" class="map-frame" tabindex="0" role="application" aria-roledescription="World map" aria-label="Interactive world map of abstract submissions. Choose a country from the country list, the map or the ranking. When the map has keyboard focus, the arrow keys move between countries with submissions and Enter opens a country.">
                   <svg id="map-svg" class="map-svg" role="presentation">
                     <g class="viewport"></g>
                   </svg>
