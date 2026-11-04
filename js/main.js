@@ -1,5 +1,5 @@
 import { track } from "./analytics.js";
-import { formatNumber, formatRatio, formatShare, formatUpdated } from "./format.js";
+import { formatNumber, formatRatio, formatShare, formatUpdated, normalise } from "./format.js";
 import { isEarlyRegistrationOpen } from "./registration.js";
 import { ZERO_FILL, buildScale } from "./scale.js";
 import { searchCountries } from "./search.js";
@@ -25,7 +25,9 @@ const state = {
 let svg;
 let group;
 let zoomBehaviour;
-let searchActive = 0;
+let countryActive = 0;
+let countryOpen = false;
+let countryTyping = false;
 let streamActive = 0;
 let streamOpen = false;
 
@@ -60,15 +62,31 @@ async function boot() {
     bindControls();
     setupMap();
     render();
+    scrollToHash();
   } catch (error) {
+    console.error(error);
     fail("The submission figures could not be loaded. Please refresh the page.");
   }
 }
 
 function readJson(response) {
-  if (!response.ok) throw new Error("missing");
+  if (!response.ok) throw new Error(`${response.url} returned HTTP ${response.status}`);
   return response.json();
 }
+
+function scrollToHash() {
+  const hash = location.hash;
+  if (!hash || hash === "#") return;
+  let target = null;
+  try {
+    target = document.querySelector(hash);
+  } catch {
+    return;
+  }
+  if (target) target.scrollIntoView();
+}
+
+window.addEventListener("hashchange", scrollToHash);
 
 function fail(message) {
   $("status").hidden = true;
@@ -117,19 +135,47 @@ function bindControls() {
 
   $("stream-button").addEventListener("click", (event) => {
     event.stopPropagation();
+    if (!streamOpen) closeCountryMenu(true);
     toggleStream(!streamOpen);
   });
   $("stream-button").addEventListener("keydown", onStreamKey);
-  $("search-input").addEventListener("input", onSearchInput);
-  $("search-input").addEventListener("focus", onSearchInput);
-  $("search-input").addEventListener("keydown", onSearchKey);
+  const countryInput = $("country-input");
+  countryInput.addEventListener("focus", () => {
+    countryTyping = false;
+    closeStreamIfOpen();
+    openCountryMenu();
+    countryInput.select();
+  });
+  countryInput.addEventListener("input", () => {
+    countryTyping = true;
+    countryActive = 0;
+    openCountryMenu();
+  });
+  countryInput.addEventListener("keydown", onCountryKey);
+  countryInput.addEventListener("blur", () => {
+    window.setTimeout(() => {
+      if (!$("country-filter").contains(document.activeElement)) closeCountryMenu(true);
+    }, 0);
+  });
+  $("country-toggle").addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if (countryOpen) closeCountryMenu(true);
+    else {
+      countryTyping = false;
+      const input = $("country-input");
+      if (document.activeElement !== input) input.focus();
+      else openCountryMenu();
+    }
+  });
+  $("reset-filters").addEventListener("click", resetFilters);
   $("world-view").addEventListener("click", resetView);
   $("zoom-in").addEventListener("click", () => zoomBy(1.4));
   $("zoom-out").addEventListener("click", () => zoomBy(1 / 1.4));
   $("map-frame").addEventListener("keydown", onMapKey);
   document.addEventListener("pointerdown", (event) => {
     if (!$("stream-filter").contains(event.target)) toggleStream(false);
-    if (!$("country-search").contains(event.target)) hideSearch();
+    if (!$("country-filter").contains(event.target)) closeCountryMenu(true);
   });
 }
 
@@ -139,6 +185,10 @@ function chooseStream(id) {
   const name = id === "all" ? "all" : state.atlas.streams.find((stream) => stream.id === id).name;
   track("stream_select", { stream: name });
   render();
+}
+
+function closeStreamIfOpen() {
+  if (streamOpen) toggleStream(false);
 }
 
 function toggleStream(open) {
@@ -183,79 +233,139 @@ function onStreamKey(event) {
   }
 }
 
-function onSearchInput() {
-  const hits = searchCountries($("search-input").value, state.entries);
-  searchActive = 0;
-  const menu = $("search-menu");
+function datasetCountryOptions() {
+  return state.atlas.countries
+    .map((country) => ({ id: country.id, name: country.name }))
+    .sort((a, b) => a.name.localeCompare(b.name, "en-GB", { sensitivity: "base" }));
+}
+
+function filteredCountryOptions() {
+  const all = { id: "", name: "All countries" };
+  const query = countryTyping ? $("country-input").value.trim() : "";
+  if (!query) return [all, ...datasetCountryOptions()];
+  const represented = new Set(state.atlas.countries.map((country) => country.id));
+  const hits = searchCountries(query, state.entries, 30).filter((hit) => represented.has(hit.id));
+  const options = [];
+  if (normalise("all countries").includes(normalise(query))) options.push(all);
+  options.push(...hits);
+  return options;
+}
+
+function openCountryMenu() {
+  closeStreamIfOpen();
+  const options = filteredCountryOptions();
+  const menu = $("country-menu");
   menu.replaceChildren();
-  const query = $("search-input").value.trim();
-  if (query.length < 2) {
-    menu.hidden = true;
-    return;
-  }
+  countryOpen = true;
+  $("country-input").setAttribute("aria-expanded", "true");
   menu.hidden = false;
-  if (hits.length === 0) {
+  if (options.length === 0) {
     const empty = document.createElement("li");
     empty.className = "search-empty";
     empty.textContent = "No matching country";
     menu.append(empty);
+    $("country-input").removeAttribute("aria-activedescendant");
     return;
   }
-  hits.forEach((hit, index) => {
+  countryActive = Math.max(0, Math.min(countryActive, options.length - 1));
+  if (!countryTyping && state.selectedId) {
+    const selectedIndex = options.findIndex((option) => option.id === state.selectedId);
+    if (selectedIndex >= 0) countryActive = selectedIndex;
+  }
+  options.forEach((option, index) => {
     const item = document.createElement("li");
     item.setAttribute("role", "presentation");
     const button = document.createElement("button");
     button.type = "button";
-    button.id = `search-opt-${hit.id}`;
+    button.id = `country-opt-${option.id || "all"}`;
     button.setAttribute("role", "option");
-    button.textContent = hit.name;
-    button.classList.toggle("is-active", index === 0);
+    button.setAttribute("aria-selected", String(option.id === (state.selectedId || "")));
+    button.textContent = option.name;
+    button.addEventListener("mousedown", (event) => event.preventDefault());
     button.addEventListener("mouseenter", () => {
-      searchActive = index;
-      markSearch();
+      countryActive = index;
+      markCountry();
     });
-    button.addEventListener("click", () => chooseSearch(hit));
+    button.addEventListener("click", () => chooseCountry(option.id));
     item.append(button);
     menu.append(item);
   });
-  $("search-input").setAttribute("aria-expanded", "true");
+  markCountry();
 }
 
-function markSearch() {
-  const buttons = [...$("search-menu").querySelectorAll("button")];
-  buttons.forEach((button, index) => button.classList.toggle("is-active", index === searchActive));
-  if (buttons[searchActive]) $("search-input").setAttribute("aria-activedescendant", buttons[searchActive].id);
+function markCountry() {
+  const buttons = [...$("country-menu").querySelectorAll("button")];
+  buttons.forEach((button, index) => button.classList.toggle("is-active", index === countryActive));
+  const active = buttons[countryActive];
+  if (!active) return;
+  $("country-input").setAttribute("aria-activedescendant", active.id);
+  const menu = $("country-menu");
+  const top = active.offsetTop;
+  const bottom = top + active.offsetHeight;
+  if (top < menu.scrollTop) menu.scrollTop = top;
+  else if (bottom > menu.scrollTop + menu.clientHeight) menu.scrollTop = bottom - menu.clientHeight;
 }
 
-function onSearchKey(event) {
-  const buttons = [...$("search-menu").querySelectorAll("button")];
-  if (event.key === "ArrowDown") {
+function onCountryKey(event) {
+  const options = filteredCountryOptions();
+  if (event.key === "ArrowDown" || event.key === "ArrowUp") {
     event.preventDefault();
-    searchActive = Math.min(buttons.length - 1, searchActive + 1);
-    markSearch();
-  } else if (event.key === "ArrowUp") {
+    if (!countryOpen) openCountryMenu();
+    const direction = event.key === "ArrowDown" ? 1 : -1;
+    const count = $("country-menu").querySelectorAll("button").length;
+    if (count === 0) return;
+    countryActive = (countryActive + direction + count) % count;
+    markCountry();
+  } else if (event.key === "Enter") {
     event.preventDefault();
-    searchActive = Math.max(0, searchActive - 1);
-    markSearch();
-  } else if (event.key === "Enter" && buttons[searchActive]) {
-    event.preventDefault();
-    const id = buttons[searchActive].id.replace("search-opt-", "");
-    const hit = state.entries.find((entry) => entry.id === id);
-    if (hit) chooseSearch(hit);
+    if (!countryOpen) openCountryMenu();
+    else if (options[countryActive]) chooseCountry(options[countryActive].id);
   } else if (event.key === "Escape") {
-    hideSearch();
+    event.preventDefault();
+    closeCountryMenu(true);
+  } else if (event.key === "Tab") {
+    closeCountryMenu(true);
   }
 }
 
-function chooseSearch(hit) {
-  $("search-input").value = hit.name;
-  hideSearch();
-  selectCountry(hit.id, "search");
+function chooseCountry(id) {
+  countryTyping = false;
+  closeCountryMenu(false);
+  if (!id) clearCountry();
+  else selectCountry(id, "dropdown");
 }
 
-function hideSearch() {
-  $("search-menu").hidden = true;
-  $("search-input").setAttribute("aria-expanded", "false");
+function closeCountryMenu(restore) {
+  countryOpen = false;
+  $("country-menu").hidden = true;
+  $("country-input").setAttribute("aria-expanded", "false");
+  $("country-input").removeAttribute("aria-activedescendant");
+  if (restore) {
+    countryTyping = false;
+    $("country-input").value = state.selectedId ? countryName(state.selectedId) : "";
+  }
+}
+
+function renderCountryControl() {
+  const input = $("country-input");
+  if (!countryTyping || document.activeElement !== input) {
+    countryTyping = false;
+    input.value = state.selectedId ? countryName(state.selectedId) : "";
+  }
+  if (!countryOpen) input.setAttribute("aria-expanded", "false");
+  updateResetButton();
+}
+
+function isDefaultView() {
+  return state.streamId === "all" && !state.selectedId && state.scaleK <= 1.01;
+}
+
+function updateResetButton() {
+  const button = $("reset-filters");
+  if (!button) return;
+  const idle = isDefaultView();
+  button.disabled = idle;
+  button.setAttribute("aria-disabled", String(idle));
 }
 
 function selectCountry(id, source) {
@@ -263,7 +373,7 @@ function selectCountry(id, source) {
   else state.selectedId = id;
   const name = countryName(id);
   if (state.selectedId) {
-    if (source === "search") track("country_search", { country: name });
+    if (source === "dropdown") track("country_search", { country: name });
     else if (source === "ranking") track("ranking_select", { country: name });
     else track("country_select", { country: name, source });
     focusCountry(state.selectedId, true);
@@ -273,9 +383,30 @@ function selectCountry(id, source) {
   render();
 }
 
+function clearCountry() {
+  state.selectedId = null;
+  state.keyboardId = null;
+  resetZoom(true);
+  render();
+}
+
+function resetFilters() {
+  state.streamId = "all";
+  state.selectedId = null;
+  state.keyboardId = null;
+  state.hoverId = null;
+  countryTyping = false;
+  closeCountryMenu(false);
+  toggleStream(false);
+  resetZoom(true);
+  render();
+}
+
 function resetView() {
   state.selectedId = null;
   state.keyboardId = null;
+  countryTyping = false;
+  closeCountryMenu(false);
   resetZoom(true);
   render();
 }
@@ -291,6 +422,7 @@ function render() {
   renderStats(current);
   renderFreshness();
   renderStreamLabel();
+  renderCountryControl();
   renderSide(current);
   renderDirectory(current);
   renderInsights();
@@ -412,14 +544,12 @@ function profilePanel() {
   const back = document.createElement("button");
   back.type = "button";
   back.textContent = "Back to ranking";
-  back.addEventListener("click", () => {
-    state.selectedId = null;
-    render();
-  });
+  back.addEventListener("click", clearCountry);
   toolbar.append(back);
   const kicker = document.createElement("p");
   kicker.className = "profile-kicker";
-  kicker.textContent = "Abstract submissions";
+  const stream = state.atlas.streams.find((item) => item.id === state.streamId);
+  kicker.textContent = filtered && stream ? stream.name : "All abstract submissions";
   const title = document.createElement("h3");
   title.id = "profile-title";
   title.textContent = profile.name;
@@ -448,7 +578,7 @@ function profilePanel() {
   if (profile.viewCount === 0) {
     const empty = document.createElement("p");
     empty.className = "profile-empty";
-    empty.textContent = "No abstract submissions in this view.";
+    empty.textContent = `No submissions from ${profile.name} in this scientific stream.`;
     section.append(empty);
   }
   const heading = document.createElement("h4");
@@ -535,6 +665,7 @@ function setupMap() {
       group.attr("transform", event.transform);
       state.scaleK = event.transform.k;
       $("map-svg").classList.toggle("is-zoomed", event.transform.k > 1.01);
+      updateResetButton();
     });
   svg.call(zoomBehaviour);
   const frame = $("map-frame");
