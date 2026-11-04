@@ -1,0 +1,56 @@
+{
+  "rows": 2143,
+  "tracks": [
+    "Clinical obstetrics",
+    "Endocrinology",
+    "Gynaecology",
+    "Maternal fetal medicine",
+    "Reproductive medicine",
+    "Sexual and reproductive health and rights",
+    "Women’s cancer"
+  ],
+  "odd_countries": [
+    {
+      "name": "Czechia",
+      "codepoints": []
+    },
+    {
+      "name": "DR Congo",
+      "codepoints": []
+    },
+    {
+      "name": "Hong Kong",
+      "codepoints": []
+    },
+    {
+      "name": "Ivory Coast",
+      "codepoints": []
+    },
+    {
+      "name": "Palestine",
+      "codepoints": []
+    },
+    {
+      "name": "Russia",
+      "codepoints": []
+    },
+    {
+      "name": "South Korea",
+      "codepoints": []
+    },
+    {
+      "name": "Taiwan",
+      "codepoints": []
+    },
+    {
+      "name": "Türkiye",
+      "codepoints": [
+        "0xfc"
+      ]
+    },
+    {
+      "name": "[object Object]",
+      "codepoints": []
+    }
+  ]
+}

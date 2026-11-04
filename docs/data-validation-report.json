@@ -1,0 +1,256 @@
+{
+  "eligibleSubmissions": 2143,
+  "countriesRepresented": 114,
+  "leadingCountry": {
+    "name": "Canada",
+    "count": 192
+  },
+  "leadingStream": {
+    "name": "Clinical obstetrics",
+    "count": 709
+  },
+  "blankCountry": 11,
+  "unmatched": {
+    "[object Object]": 1
+  },
+  "unassignedStream": 0,
+  "streamTotals": {
+    "Maternal fetal medicine": 352,
+    "Clinical obstetrics": 709,
+    "Gynaecology": 196,
+    "Sexual and reproductive health and rights": 403,
+    "Reproductive medicine": 125,
+    "Women's cancer": 232,
+    "Endocrinology": 126
+  },
+  "streamLeaders": {
+    "Maternal fetal medicine": {
+      "country": "Mexico",
+      "count": 35,
+      "countries": 62
+    },
+    "Clinical obstetrics": {
+      "country": "Canada",
+      "count": 67,
+      "countries": 81
+    },
+    "Gynaecology": {
+      "country": "Canada",
+      "count": 19,
+      "countries": 54
+    },
+    "Sexual and reproductive health and rights": {
+      "country": "United States",
+      "count": 48,
+      "countries": 61
+    },
+    "Reproductive medicine": {
+      "country": "Canada",
+      "count": 17,
+      "countries": 41
+    },
+    "Women's cancer": {
+      "country": "India",
+      "count": 18,
+      "countries": 62
+    },
+    "Endocrinology": {
+      "country": "Canada",
+      "count": 17,
+      "countries": 37
+    }
+  },
+  "top10": [
+    {
+      "rank": 1,
+      "name": "Canada",
+      "count": 192
+    },
+    {
+      "rank": 2,
+      "name": "United States",
+      "count": 154
+    },
+    {
+      "rank": 3,
+      "name": "India",
+      "count": 132
+    },
+    {
+      "rank": 4,
+      "name": "Nigeria",
+      "count": 128
+    },
+    {
+      "rank": 5,
+      "name": "Brazil",
+      "count": 106
+    },
+    {
+      "rank": 6,
+      "name": "Mexico",
+      "count": 102
+    },
+    {
+      "rank": 7,
+      "name": "Pakistan",
+      "count": 101
+    },
+    {
+      "rank": 8,
+      "name": "Bangladesh",
+      "count": 70
+    },
+    {
+      "rank": 9,
+      "name": "United Kingdom",
+      "count": 60
+    },
+    {
+      "rank": 10,
+      "name": "Rwanda",
+      "count": 59
+    }
+  ],
+  "countriesInAllStreams": [
+    "Canada",
+    "United States",
+    "India",
+    "Nigeria",
+    "Brazil",
+    "Mexico",
+    "Pakistan",
+    "Bangladesh",
+    "United Kingdom",
+    "Rwanda",
+    "Kenya",
+    "Philippines",
+    "Vietnam",
+    "China",
+    "South Africa",
+    "Germany",
+    "Russia",
+    "Peru",
+    "Switzerland"
+  ],
+  "continents": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "Oceania",
+    "South America"
+  ],
+  "aliasesDocumented": 141,
+  "sourceAliasExamples": [
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Bangladesh",
+    "Belarus",
+    "Belgium",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Botswana",
+    "Brazil",
+    "Burkina Faso",
+    "Burundi",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Chile",
+    "China",
+    "Colombia",
+    "Cyprus",
+    "DR Congo",
+    "Denmark",
+    "Ecuador",
+    "Egypt",
+    "Estonia",
+    "Ethiopia",
+    "Fiji",
+    "France",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Greece",
+    "Guatemala",
+    "Guinea",
+    "Guyana",
+    "Haiti",
+    "Hong Kong",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Ireland",
+    "Italy",
+    "Ivory Coast",
+    "Japan",
+    "Kazakhstan",
+    "Kenya",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Lithuania",
+    "Luxembourg",
+    "Malawi",
+    "Malaysia",
+    "Mali",
+    "Mexico",
+    "Mongolia",
+    "Morocco",
+    "Mozambique",
+    "Namibia",
+    "Nepal",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "Norway",
+    "Pakistan",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Rwanda",
+    "Saudi Arabia",
+    "Senegal",
+    "Sierra Leone",
+    "Slovenia",
+    "South Africa",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Thailand",
+    "Togo",
+    "Tunisia",
+    "Uganda",
+    "Ukraine",
+    "Uruguay",
+    "Uzbekistan",
+    "Venezuela",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "notes": {
+    "sessionIdAvailable": false,
+    "submissionFormAvailable": false,
+    "statusAvailable": false,
+    "titleAvailable": false,
+    "eligibility": "Each row in the supplied extract is counted once as an abstract submission. The extract has no session identifier, submission form, status or title, so duplicate identifiers, bursary applications and test titles cannot be detected. Counts describe submissions in this extract. They do not describe accepted research.",
+    "duplicateIdsSkipped": 0
+  },
+  "reconciliation": {
+    "eligible": 2143,
+    "streamSum": 2143,
+    "geographicPlusBlankPlusUnmatched": 2143,
+    "countrySum": 2131
+  }
+}

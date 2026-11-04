@@ -1,0 +1,1241 @@
+[
+  {
+    "NAME": "Fiji",
+    "ADMIN": "Fiji",
+    "ISO_A3": "FJI",
+    "ADM0_A3": "FJI",
+    "ISO_A2": "FJ"
+  },
+  {
+    "NAME": "Tanzania",
+    "ADMIN": "United Republic of Tanzania",
+    "ISO_A3": "TZA",
+    "ADM0_A3": "TZA",
+    "ISO_A2": "TZ"
+  },
+  {
+    "NAME": "W. Sahara",
+    "ADMIN": "Western Sahara",
+    "ISO_A3": "ESH",
+    "ADM0_A3": "SAH",
+    "ISO_A2": "EH"
+  },
+  {
+    "NAME": "Canada",
+    "ADMIN": "Canada",
+    "ISO_A3": "CAN",
+    "ADM0_A3": "CAN",
+    "ISO_A2": "CA"
+  },
+  {
+    "NAME": "United States of America",
+    "ADMIN": "United States of America",
+    "ISO_A3": "USA",
+    "ADM0_A3": "USA",
+    "ISO_A2": "US"
+  },
+  {
+    "NAME": "Kazakhstan",
+    "ADMIN": "Kazakhstan",
+    "ISO_A3": "KAZ",
+    "ADM0_A3": "KAZ",
+    "ISO_A2": "KZ"
+  },
+  {
+    "NAME": "Uzbekistan",
+    "ADMIN": "Uzbekistan",
+    "ISO_A3": "UZB",
+    "ADM0_A3": "UZB",
+    "ISO_A2": "UZ"
+  },
+  {
+    "NAME": "Papua New Guinea",
+    "ADMIN": "Papua New Guinea",
+    "ISO_A3": "PNG",
+    "ADM0_A3": "PNG",
+    "ISO_A2": "PG"
+  },
+  {
+    "NAME": "Indonesia",
+    "ADMIN": "Indonesia",
+    "ISO_A3": "IDN",
+    "ADM0_A3": "IDN",
+    "ISO_A2": "ID"
+  },
+  {
+    "NAME": "Argentina",
+    "ADMIN": "Argentina",
+    "ISO_A3": "ARG",
+    "ADM0_A3": "ARG",
+    "ISO_A2": "AR"
+  },
+  {
+    "NAME": "Chile",
+    "ADMIN": "Chile",
+    "ISO_A3": "CHL",
+    "ADM0_A3": "CHL",
+    "ISO_A2": "CL"
+  },
+  {
+    "NAME": "Dem. Rep. Congo",
+    "ADMIN": "Democratic Republic of the Congo",
+    "ISO_A3": "COD",
+    "ADM0_A3": "COD",
+    "ISO_A2": "CD"
+  },
+  {
+    "NAME": "Somalia",
+    "ADMIN": "Somalia",
+    "ISO_A3": "SOM",
+    "ADM0_A3": "SOM",
+    "ISO_A2": "SO"
+  },
+  {
+    "NAME": "Kenya",
+    "ADMIN": "Kenya",
+    "ISO_A3": "KEN",
+    "ADM0_A3": "KEN",
+    "ISO_A2": "KE"
+  },
+  {
+    "NAME": "Sudan",
+    "ADMIN": "Sudan",
+    "ISO_A3": "SDN",
+    "ADM0_A3": "SDN",
+    "ISO_A2": "SD"
+  },
+  {
+    "NAME": "Chad",
+    "ADMIN": "Chad",
+    "ISO_A3": "TCD",
+    "ADM0_A3": "TCD",
+    "ISO_A2": "TD"
+  },
+  {
+    "NAME": "Haiti",
+    "ADMIN": "Haiti",
+    "ISO_A3": "HTI",
+    "ADM0_A3": "HTI",
+    "ISO_A2": "HT"
+  },
+  {
+    "NAME": "Dominican Rep.",
+    "ADMIN": "Dominican Republic",
+    "ISO_A3": "DOM",
+    "ADM0_A3": "DOM",
+    "ISO_A2": "DO"
+  },
+  {
+    "NAME": "Russia",
+    "ADMIN": "Russia",
+    "ISO_A3": "RUS",
+    "ADM0_A3": "RUS",
+    "ISO_A2": "RU"
+  },
+  {
+    "NAME": "Bahamas",
+    "ADMIN": "The Bahamas",
+    "ISO_A3": "BHS",
+    "ADM0_A3": "BHS",
+    "ISO_A2": "BS"
+  },
+  {
+    "NAME": "Falkland Is.",
+    "ADMIN": "Falkland Islands",
+    "ISO_A3": "FLK",
+    "ADM0_A3": "FLK",
+    "ISO_A2": "FK"
+  },
+  {
+    "NAME": "Norway",
+    "ADMIN": "Norway",
+    "ISO_A3": "-99",
+    "ADM0_A3": "NOR",
+    "ISO_A2": "-99"
+  },
+  {
+    "NAME": "Greenland",
+    "ADMIN": "Greenland",
+    "ISO_A3": "GRL",
+    "ADM0_A3": "GRL",
+    "ISO_A2": "GL"
+  },
+  {
+    "NAME": "Fr. S. Antarctic Lands",
+    "ADMIN": "French Southern and Antarctic Lands",
+    "ISO_A3": "ATF",
+    "ADM0_A3": "ATF",
+    "ISO_A2": "TF"
+  },
+  {
+    "NAME": "Timor-Leste",
+    "ADMIN": "East Timor",
+    "ISO_A3": "TLS",
+    "ADM0_A3": "TLS",
+    "ISO_A2": "TL"
+  },
+  {
+    "NAME": "South Africa",
+    "ADMIN": "South Africa",
+    "ISO_A3": "ZAF",
+    "ADM0_A3": "ZAF",
+    "ISO_A2": "ZA"
+  },
+  {
+    "NAME": "Lesotho",
+    "ADMIN": "Lesotho",
+    "ISO_A3": "LSO",
+    "ADM0_A3": "LSO",
+    "ISO_A2": "LS"
+  },
+  {
+    "NAME": "Mexico",
+    "ADMIN": "Mexico",
+    "ISO_A3": "MEX",
+    "ADM0_A3": "MEX",
+    "ISO_A2": "MX"
+  },
+  {
+    "NAME": "Uruguay",
+    "ADMIN": "Uruguay",
+    "ISO_A3": "URY",
+    "ADM0_A3": "URY",
+    "ISO_A2": "UY"
+  },
+  {
+    "NAME": "Brazil",
+    "ADMIN": "Brazil",
+    "ISO_A3": "BRA",
+    "ADM0_A3": "BRA",
+    "ISO_A2": "BR"
+  },
+  {
+    "NAME": "Bolivia",
+    "ADMIN": "Bolivia",
+    "ISO_A3": "BOL",
+    "ADM0_A3": "BOL",
+    "ISO_A2": "BO"
+  },
+  {
+    "NAME": "Peru",
+    "ADMIN": "Peru",
+    "ISO_A3": "PER",
+    "ADM0_A3": "PER",
+    "ISO_A2": "PE"
+  },
+  {
+    "NAME": "Colombia",
+    "ADMIN": "Colombia",
+    "ISO_A3": "COL",
+    "ADM0_A3": "COL",
+    "ISO_A2": "CO"
+  },
+  {
+    "NAME": "Panama",
+    "ADMIN": "Panama",
+    "ISO_A3": "PAN",
+    "ADM0_A3": "PAN",
+    "ISO_A2": "PA"
+  },
+  {
+    "NAME": "Costa Rica",
+    "ADMIN": "Costa Rica",
+    "ISO_A3": "CRI",
+    "ADM0_A3": "CRI",
+    "ISO_A2": "CR"
+  },
+  {
+    "NAME": "Nicaragua",
+    "ADMIN": "Nicaragua",
+    "ISO_A3": "NIC",
+    "ADM0_A3": "NIC",
+    "ISO_A2": "NI"
+  },
+  {
+    "NAME": "Honduras",
+    "ADMIN": "Honduras",
+    "ISO_A3": "HND",
+    "ADM0_A3": "HND",
+    "ISO_A2": "HN"
+  },
+  {
+    "NAME": "El Salvador",
+    "ADMIN": "El Salvador",
+    "ISO_A3": "SLV",
+    "ADM0_A3": "SLV",
+    "ISO_A2": "SV"
+  },
+  {
+    "NAME": "Guatemala",
+    "ADMIN": "Guatemala",
+    "ISO_A3": "GTM",
+    "ADM0_A3": "GTM",
+    "ISO_A2": "GT"
+  },
+  {
+    "NAME": "Belize",
+    "ADMIN": "Belize",
+    "ISO_A3": "BLZ",
+    "ADM0_A3": "BLZ",
+    "ISO_A2": "BZ"
+  },
+  {
+    "NAME": "Venezuela",
+    "ADMIN": "Venezuela",
+    "ISO_A3": "VEN",
+    "ADM0_A3": "VEN",
+    "ISO_A2": "VE"
+  },
+  {
+    "NAME": "Guyana",
+    "ADMIN": "Guyana",
+    "ISO_A3": "GUY",
+    "ADM0_A3": "GUY",
+    "ISO_A2": "GY"
+  },
+  {
+    "NAME": "Suriname",
+    "ADMIN": "Suriname",
+    "ISO_A3": "SUR",
+    "ADM0_A3": "SUR",
+    "ISO_A2": "SR"
+  },
+  {
+    "NAME": "France",
+    "ADMIN": "France",
+    "ISO_A3": "-99",
+    "ADM0_A3": "FRA",
+    "ISO_A2": "-99"
+  },
+  {
+    "NAME": "Ecuador",
+    "ADMIN": "Ecuador",
+    "ISO_A3": "ECU",
+    "ADM0_A3": "ECU",
+    "ISO_A2": "EC"
+  },
+  {
+    "NAME": "Puerto Rico",
+    "ADMIN": "Puerto Rico",
+    "ISO_A3": "PRI",
+    "ADM0_A3": "PRI",
+    "ISO_A2": "PR"
+  },
+  {
+    "NAME": "Jamaica",
+    "ADMIN": "Jamaica",
+    "ISO_A3": "JAM",
+    "ADM0_A3": "JAM",
+    "ISO_A2": "JM"
+  },
+  {
+    "NAME": "Cuba",
+    "ADMIN": "Cuba",
+    "ISO_A3": "CUB",
+    "ADM0_A3": "CUB",
+    "ISO_A2": "CU"
+  },
+  {
+    "NAME": "Zimbabwe",
+    "ADMIN": "Zimbabwe",
+    "ISO_A3": "ZWE",
+    "ADM0_A3": "ZWE",
+    "ISO_A2": "ZW"
+  },
+  {
+    "NAME": "Botswana",
+    "ADMIN": "Botswana",
+    "ISO_A3": "BWA",
+    "ADM0_A3": "BWA",
+    "ISO_A2": "BW"
+  },
+  {
+    "NAME": "Namibia",
+    "ADMIN": "Namibia",
+    "ISO_A3": "NAM",
+    "ADM0_A3": "NAM",
+    "ISO_A2": "NA"
+  },
+  {
+    "NAME": "Senegal",
+    "ADMIN": "Senegal",
+    "ISO_A3": "SEN",
+    "ADM0_A3": "SEN",
+    "ISO_A2": "SN"
+  },
+  {
+    "NAME": "Mali",
+    "ADMIN": "Mali",
+    "ISO_A3": "MLI",
+    "ADM0_A3": "MLI",
+    "ISO_A2": "ML"
+  },
+  {
+    "NAME": "Mauritania",
+    "ADMIN": "Mauritania",
+    "ISO_A3": "MRT",
+    "ADM0_A3": "MRT",
+    "ISO_A2": "MR"
+  },
+  {
+    "NAME": "Benin",
+    "ADMIN": "Benin",
+    "ISO_A3": "BEN",
+    "ADM0_A3": "BEN",
+    "ISO_A2": "BJ"
+  },
+  {
+    "NAME": "Niger",
+    "ADMIN": "Niger",
+    "ISO_A3": "NER",
+    "ADM0_A3": "NER",
+    "ISO_A2": "NE"
+  },
+  {
+    "NAME": "Nigeria",
+    "ADMIN": "Nigeria",
+    "ISO_A3": "NGA",
+    "ADM0_A3": "NGA",
+    "ISO_A2": "NG"
+  },
+  {
+    "NAME": "Cameroon",
+    "ADMIN": "Cameroon",
+    "ISO_A3": "CMR",
+    "ADM0_A3": "CMR",
+    "ISO_A2": "CM"
+  },
+  {
+    "NAME": "Togo",
+    "ADMIN": "Togo",
+    "ISO_A3": "TGO",
+    "ADM0_A3": "TGO",
+    "ISO_A2": "TG"
+  },
+  {
+    "NAME": "Ghana",
+    "ADMIN": "Ghana",
+    "ISO_A3": "GHA",
+    "ADM0_A3": "GHA",
+    "ISO_A2": "GH"
+  },
+  {
+    "NAME": "Côte d'Ivoire",
+    "ADMIN": "Ivory Coast",
+    "ISO_A3": "CIV",
+    "ADM0_A3": "CIV",
+    "ISO_A2": "CI"
+  },
+  {
+    "NAME": "Guinea",
+    "ADMIN": "Guinea",
+    "ISO_A3": "GIN",
+    "ADM0_A3": "GIN",
+    "ISO_A2": "GN"
+  },
+  {
+    "NAME": "Guinea-Bissau",
+    "ADMIN": "Guinea-Bissau",
+    "ISO_A3": "GNB",
+    "ADM0_A3": "GNB",
+    "ISO_A2": "GW"
+  },
+  {
+    "NAME": "Liberia",
+    "ADMIN": "Liberia",
+    "ISO_A3": "LBR",
+    "ADM0_A3": "LBR",
+    "ISO_A2": "LR"
+  },
+  {
+    "NAME": "Sierra Leone",
+    "ADMIN": "Sierra Leone",
+    "ISO_A3": "SLE",
+    "ADM0_A3": "SLE",
+    "ISO_A2": "SL"
+  },
+  {
+    "NAME": "Burkina Faso",
+    "ADMIN": "Burkina Faso",
+    "ISO_A3": "BFA",
+    "ADM0_A3": "BFA",
+    "ISO_A2": "BF"
+  },
+  {
+    "NAME": "Central African Rep.",
+    "ADMIN": "Central African Republic",
+    "ISO_A3": "CAF",
+    "ADM0_A3": "CAF",
+    "ISO_A2": "CF"
+  },
+  {
+    "NAME": "Congo",
+    "ADMIN": "Republic of the Congo",
+    "ISO_A3": "COG",
+    "ADM0_A3": "COG",
+    "ISO_A2": "CG"
+  },
+  {
+    "NAME": "Gabon",
+    "ADMIN": "Gabon",
+    "ISO_A3": "GAB",
+    "ADM0_A3": "GAB",
+    "ISO_A2": "GA"
+  },
+  {
+    "NAME": "Eq. Guinea",
+    "ADMIN": "Equatorial Guinea",
+    "ISO_A3": "GNQ",
+    "ADM0_A3": "GNQ",
+    "ISO_A2": "GQ"
+  },
+  {
+    "NAME": "Zambia",
+    "ADMIN": "Zambia",
+    "ISO_A3": "ZMB",
+    "ADM0_A3": "ZMB",
+    "ISO_A2": "ZM"
+  },
+  {
+    "NAME": "Malawi",
+    "ADMIN": "Malawi",
+    "ISO_A3": "MWI",
+    "ADM0_A3": "MWI",
+    "ISO_A2": "MW"
+  },
+  {
+    "NAME": "Mozambique",
+    "ADMIN": "Mozambique",
+    "ISO_A3": "MOZ",
+    "ADM0_A3": "MOZ",
+    "ISO_A2": "MZ"
+  },
+  {
+    "NAME": "eSwatini",
+    "ADMIN": "eSwatini",
+    "ISO_A3": "SWZ",
+    "ADM0_A3": "SWZ",
+    "ISO_A2": "SZ"
+  },
+  {
+    "NAME": "Angola",
+    "ADMIN": "Angola",
+    "ISO_A3": "AGO",
+    "ADM0_A3": "AGO",
+    "ISO_A2": "AO"
+  },
+  {
+    "NAME": "Burundi",
+    "ADMIN": "Burundi",
+    "ISO_A3": "BDI",
+    "ADM0_A3": "BDI",
+    "ISO_A2": "BI"
+  },
+  {
+    "NAME": "Israel",
+    "ADMIN": "Israel",
+    "ISO_A3": "ISR",
+    "ADM0_A3": "ISR",
+    "ISO_A2": "IL"
+  },
+  {
+    "NAME": "Lebanon",
+    "ADMIN": "Lebanon",
+    "ISO_A3": "LBN",
+    "ADM0_A3": "LBN",
+    "ISO_A2": "LB"
+  },
+  {
+    "NAME": "Madagascar",
+    "ADMIN": "Madagascar",
+    "ISO_A3": "MDG",
+    "ADM0_A3": "MDG",
+    "ISO_A2": "MG"
+  },
+  {
+    "NAME": "Palestine",
+    "ADMIN": "Palestine",
+    "ISO_A3": "PSE",
+    "ADM0_A3": "PSX",
+    "ISO_A2": "PS"
+  },
+  {
+    "NAME": "Gambia",
+    "ADMIN": "Gambia",
+    "ISO_A3": "GMB",
+    "ADM0_A3": "GMB",
+    "ISO_A2": "GM"
+  },
+  {
+    "NAME": "Tunisia",
+    "ADMIN": "Tunisia",
+    "ISO_A3": "TUN",
+    "ADM0_A3": "TUN",
+    "ISO_A2": "TN"
+  },
+  {
+    "NAME": "Algeria",
+    "ADMIN": "Algeria",
+    "ISO_A3": "DZA",
+    "ADM0_A3": "DZA",
+    "ISO_A2": "DZ"
+  },
+  {
+    "NAME": "Jordan",
+    "ADMIN": "Jordan",
+    "ISO_A3": "JOR",
+    "ADM0_A3": "JOR",
+    "ISO_A2": "JO"
+  },
+  {
+    "NAME": "United Arab Emirates",
+    "ADMIN": "United Arab Emirates",
+    "ISO_A3": "ARE",
+    "ADM0_A3": "ARE",
+    "ISO_A2": "AE"
+  },
+  {
+    "NAME": "Qatar",
+    "ADMIN": "Qatar",
+    "ISO_A3": "QAT",
+    "ADM0_A3": "QAT",
+    "ISO_A2": "QA"
+  },
+  {
+    "NAME": "Kuwait",
+    "ADMIN": "Kuwait",
+    "ISO_A3": "KWT",
+    "ADM0_A3": "KWT",
+    "ISO_A2": "KW"
+  },
+  {
+    "NAME": "Iraq",
+    "ADMIN": "Iraq",
+    "ISO_A3": "IRQ",
+    "ADM0_A3": "IRQ",
+    "ISO_A2": "IQ"
+  },
+  {
+    "NAME": "Oman",
+    "ADMIN": "Oman",
+    "ISO_A3": "OMN",
+    "ADM0_A3": "OMN",
+    "ISO_A2": "OM"
+  },
+  {
+    "NAME": "Vanuatu",
+    "ADMIN": "Vanuatu",
+    "ISO_A3": "VUT",
+    "ADM0_A3": "VUT",
+    "ISO_A2": "VU"
+  },
+  {
+    "NAME": "Cambodia",
+    "ADMIN": "Cambodia",
+    "ISO_A3": "KHM",
+    "ADM0_A3": "KHM",
+    "ISO_A2": "KH"
+  },
+  {
+    "NAME": "Thailand",
+    "ADMIN": "Thailand",
+    "ISO_A3": "THA",
+    "ADM0_A3": "THA",
+    "ISO_A2": "TH"
+  },
+  {
+    "NAME": "Laos",
+    "ADMIN": "Laos",
+    "ISO_A3": "LAO",
+    "ADM0_A3": "LAO",
+    "ISO_A2": "LA"
+  },
+  {
+    "NAME": "Myanmar",
+    "ADMIN": "Myanmar",
+    "ISO_A3": "MMR",
+    "ADM0_A3": "MMR",
+    "ISO_A2": "MM"
+  },
+  {
+    "NAME": "Vietnam",
+    "ADMIN": "Vietnam",
+    "ISO_A3": "VNM",
+    "ADM0_A3": "VNM",
+    "ISO_A2": "VN"
+  },
+  {
+    "NAME": "North Korea",
+    "ADMIN": "North Korea",
+    "ISO_A3": "PRK",
+    "ADM0_A3": "PRK",
+    "ISO_A2": "KP"
+  },
+  {
+    "NAME": "South Korea",
+    "ADMIN": "South Korea",
+    "ISO_A3": "KOR",
+    "ADM0_A3": "KOR",
+    "ISO_A2": "KR"
+  },
+  {
+    "NAME": "Mongolia",
+    "ADMIN": "Mongolia",
+    "ISO_A3": "MNG",
+    "ADM0_A3": "MNG",
+    "ISO_A2": "MN"
+  },
+  {
+    "NAME": "India",
+    "ADMIN": "India",
+    "ISO_A3": "IND",
+    "ADM0_A3": "IND",
+    "ISO_A2": "IN"
+  },
+  {
+    "NAME": "Bangladesh",
+    "ADMIN": "Bangladesh",
+    "ISO_A3": "BGD",
+    "ADM0_A3": "BGD",
+    "ISO_A2": "BD"
+  },
+  {
+    "NAME": "Bhutan",
+    "ADMIN": "Bhutan",
+    "ISO_A3": "BTN",
+    "ADM0_A3": "BTN",
+    "ISO_A2": "BT"
+  },
+  {
+    "NAME": "Nepal",
+    "ADMIN": "Nepal",
+    "ISO_A3": "NPL",
+    "ADM0_A3": "NPL",
+    "ISO_A2": "NP"
+  },
+  {
+    "NAME": "Pakistan",
+    "ADMIN": "Pakistan",
+    "ISO_A3": "PAK",
+    "ADM0_A3": "PAK",
+    "ISO_A2": "PK"
+  },
+  {
+    "NAME": "Afghanistan",
+    "ADMIN": "Afghanistan",
+    "ISO_A3": "AFG",
+    "ADM0_A3": "AFG",
+    "ISO_A2": "AF"
+  },
+  {
+    "NAME": "Tajikistan",
+    "ADMIN": "Tajikistan",
+    "ISO_A3": "TJK",
+    "ADM0_A3": "TJK",
+    "ISO_A2": "TJ"
+  },
+  {
+    "NAME": "Kyrgyzstan",
+    "ADMIN": "Kyrgyzstan",
+    "ISO_A3": "KGZ",
+    "ADM0_A3": "KGZ",
+    "ISO_A2": "KG"
+  },
+  {
+    "NAME": "Turkmenistan",
+    "ADMIN": "Turkmenistan",
+    "ISO_A3": "TKM",
+    "ADM0_A3": "TKM",
+    "ISO_A2": "TM"
+  },
+  {
+    "NAME": "Iran",
+    "ADMIN": "Iran",
+    "ISO_A3": "IRN",
+    "ADM0_A3": "IRN",
+    "ISO_A2": "IR"
+  },
+  {
+    "NAME": "Syria",
+    "ADMIN": "Syria",
+    "ISO_A3": "SYR",
+    "ADM0_A3": "SYR",
+    "ISO_A2": "SY"
+  },
+  {
+    "NAME": "Armenia",
+    "ADMIN": "Armenia",
+    "ISO_A3": "ARM",
+    "ADM0_A3": "ARM",
+    "ISO_A2": "AM"
+  },
+  {
+    "NAME": "Sweden",
+    "ADMIN": "Sweden",
+    "ISO_A3": "SWE",
+    "ADM0_A3": "SWE",
+    "ISO_A2": "SE"
+  },
+  {
+    "NAME": "Belarus",
+    "ADMIN": "Belarus",
+    "ISO_A3": "BLR",
+    "ADM0_A3": "BLR",
+    "ISO_A2": "BY"
+  },
+  {
+    "NAME": "Ukraine",
+    "ADMIN": "Ukraine",
+    "ISO_A3": "UKR",
+    "ADM0_A3": "UKR",
+    "ISO_A2": "UA"
+  },
+  {
+    "NAME": "Poland",
+    "ADMIN": "Poland",
+    "ISO_A3": "POL",
+    "ADM0_A3": "POL",
+    "ISO_A2": "PL"
+  },
+  {
+    "NAME": "Austria",
+    "ADMIN": "Austria",
+    "ISO_A3": "AUT",
+    "ADM0_A3": "AUT",
+    "ISO_A2": "AT"
+  },
+  {
+    "NAME": "Hungary",
+    "ADMIN": "Hungary",
+    "ISO_A3": "HUN",
+    "ADM0_A3": "HUN",
+    "ISO_A2": "HU"
+  },
+  {
+    "NAME": "Moldova",
+    "ADMIN": "Moldova",
+    "ISO_A3": "MDA",
+    "ADM0_A3": "MDA",
+    "ISO_A2": "MD"
+  },
+  {
+    "NAME": "Romania",
+    "ADMIN": "Romania",
+    "ISO_A3": "ROU",
+    "ADM0_A3": "ROU",
+    "ISO_A2": "RO"
+  },
+  {
+    "NAME": "Lithuania",
+    "ADMIN": "Lithuania",
+    "ISO_A3": "LTU",
+    "ADM0_A3": "LTU",
+    "ISO_A2": "LT"
+  },
+  {
+    "NAME": "Latvia",
+    "ADMIN": "Latvia",
+    "ISO_A3": "LVA",
+    "ADM0_A3": "LVA",
+    "ISO_A2": "LV"
+  },
+  {
+    "NAME": "Estonia",
+    "ADMIN": "Estonia",
+    "ISO_A3": "EST",
+    "ADM0_A3": "EST",
+    "ISO_A2": "EE"
+  },
+  {
+    "NAME": "Germany",
+    "ADMIN": "Germany",
+    "ISO_A3": "DEU",
+    "ADM0_A3": "DEU",
+    "ISO_A2": "DE"
+  },
+  {
+    "NAME": "Bulgaria",
+    "ADMIN": "Bulgaria",
+    "ISO_A3": "BGR",
+    "ADM0_A3": "BGR",
+    "ISO_A2": "BG"
+  },
+  {
+    "NAME": "Greece",
+    "ADMIN": "Greece",
+    "ISO_A3": "GRC",
+    "ADM0_A3": "GRC",
+    "ISO_A2": "GR"
+  },
+  {
+    "NAME": "Turkey",
+    "ADMIN": "Turkey",
+    "ISO_A3": "TUR",
+    "ADM0_A3": "TUR",
+    "ISO_A2": "TR"
+  },
+  {
+    "NAME": "Albania",
+    "ADMIN": "Albania",
+    "ISO_A3": "ALB",
+    "ADM0_A3": "ALB",
+    "ISO_A2": "AL"
+  },
+  {
+    "NAME": "Croatia",
+    "ADMIN": "Croatia",
+    "ISO_A3": "HRV",
+    "ADM0_A3": "HRV",
+    "ISO_A2": "HR"
+  },
+  {
+    "NAME": "Switzerland",
+    "ADMIN": "Switzerland",
+    "ISO_A3": "CHE",
+    "ADM0_A3": "CHE",
+    "ISO_A2": "CH"
+  },
+  {
+    "NAME": "Luxembourg",
+    "ADMIN": "Luxembourg",
+    "ISO_A3": "LUX",
+    "ADM0_A3": "LUX",
+    "ISO_A2": "LU"
+  },
+  {
+    "NAME": "Belgium",
+    "ADMIN": "Belgium",
+    "ISO_A3": "BEL",
+    "ADM0_A3": "BEL",
+    "ISO_A2": "BE"
+  },
+  {
+    "NAME": "Netherlands",
+    "ADMIN": "Netherlands",
+    "ISO_A3": "NLD",
+    "ADM0_A3": "NLD",
+    "ISO_A2": "NL"
+  },
+  {
+    "NAME": "Portugal",
+    "ADMIN": "Portugal",
+    "ISO_A3": "PRT",
+    "ADM0_A3": "PRT",
+    "ISO_A2": "PT"
+  },
+  {
+    "NAME": "Spain",
+    "ADMIN": "Spain",
+    "ISO_A3": "ESP",
+    "ADM0_A3": "ESP",
+    "ISO_A2": "ES"
+  },
+  {
+    "NAME": "Ireland",
+    "ADMIN": "Ireland",
+    "ISO_A3": "IRL",
+    "ADM0_A3": "IRL",
+    "ISO_A2": "IE"
+  },
+  {
+    "NAME": "New Caledonia",
+    "ADMIN": "New Caledonia",
+    "ISO_A3": "NCL",
+    "ADM0_A3": "NCL",
+    "ISO_A2": "NC"
+  },
+  {
+    "NAME": "Solomon Is.",
+    "ADMIN": "Solomon Islands",
+    "ISO_A3": "SLB",
+    "ADM0_A3": "SLB",
+    "ISO_A2": "SB"
+  },
+  {
+    "NAME": "New Zealand",
+    "ADMIN": "New Zealand",
+    "ISO_A3": "NZL",
+    "ADM0_A3": "NZL",
+    "ISO_A2": "NZ"
+  },
+  {
+    "NAME": "Australia",
+    "ADMIN": "Australia",
+    "ISO_A3": "AUS",
+    "ADM0_A3": "AUS",
+    "ISO_A2": "AU"
+  },
+  {
+    "NAME": "Sri Lanka",
+    "ADMIN": "Sri Lanka",
+    "ISO_A3": "LKA",
+    "ADM0_A3": "LKA",
+    "ISO_A2": "LK"
+  },
+  {
+    "NAME": "China",
+    "ADMIN": "China",
+    "ISO_A3": "CHN",
+    "ADM0_A3": "CHN",
+    "ISO_A2": "CN"
+  },
+  {
+    "NAME": "Taiwan",
+    "ADMIN": "Taiwan",
+    "ISO_A3": "TWN",
+    "ADM0_A3": "TWN",
+    "ISO_A2": "CN-TW"
+  },
+  {
+    "NAME": "Italy",
+    "ADMIN": "Italy",
+    "ISO_A3": "ITA",
+    "ADM0_A3": "ITA",
+    "ISO_A2": "IT"
+  },
+  {
+    "NAME": "Denmark",
+    "ADMIN": "Denmark",
+    "ISO_A3": "DNK",
+    "ADM0_A3": "DNK",
+    "ISO_A2": "DK"
+  },
+  {
+    "NAME": "United Kingdom",
+    "ADMIN": "United Kingdom",
+    "ISO_A3": "GBR",
+    "ADM0_A3": "GBR",
+    "ISO_A2": "GB"
+  },
+  {
+    "NAME": "Iceland",
+    "ADMIN": "Iceland",
+    "ISO_A3": "ISL",
+    "ADM0_A3": "ISL",
+    "ISO_A2": "IS"
+  },
+  {
+    "NAME": "Azerbaijan",
+    "ADMIN": "Azerbaijan",
+    "ISO_A3": "AZE",
+    "ADM0_A3": "AZE",
+    "ISO_A2": "AZ"
+  },
+  {
+    "NAME": "Georgia",
+    "ADMIN": "Georgia",
+    "ISO_A3": "GEO",
+    "ADM0_A3": "GEO",
+    "ISO_A2": "GE"
+  },
+  {
+    "NAME": "Philippines",
+    "ADMIN": "Philippines",
+    "ISO_A3": "PHL",
+    "ADM0_A3": "PHL",
+    "ISO_A2": "PH"
+  },
+  {
+    "NAME": "Malaysia",
+    "ADMIN": "Malaysia",
+    "ISO_A3": "MYS",
+    "ADM0_A3": "MYS",
+    "ISO_A2": "MY"
+  },
+  {
+    "NAME": "Brunei",
+    "ADMIN": "Brunei",
+    "ISO_A3": "BRN",
+    "ADM0_A3": "BRN",
+    "ISO_A2": "BN"
+  },
+  {
+    "NAME": "Slovenia",
+    "ADMIN": "Slovenia",
+    "ISO_A3": "SVN",
+    "ADM0_A3": "SVN",
+    "ISO_A2": "SI"
+  },
+  {
+    "NAME": "Finland",
+    "ADMIN": "Finland",
+    "ISO_A3": "FIN",
+    "ADM0_A3": "FIN",
+    "ISO_A2": "FI"
+  },
+  {
+    "NAME": "Slovakia",
+    "ADMIN": "Slovakia",
+    "ISO_A3": "SVK",
+    "ADM0_A3": "SVK",
+    "ISO_A2": "SK"
+  },
+  {
+    "NAME": "Czechia",
+    "ADMIN": "Czechia",
+    "ISO_A3": "CZE",
+    "ADM0_A3": "CZE",
+    "ISO_A2": "CZ"
+  },
+  {
+    "NAME": "Eritrea",
+    "ADMIN": "Eritrea",
+    "ISO_A3": "ERI",
+    "ADM0_A3": "ERI",
+    "ISO_A2": "ER"
+  },
+  {
+    "NAME": "Japan",
+    "ADMIN": "Japan",
+    "ISO_A3": "JPN",
+    "ADM0_A3": "JPN",
+    "ISO_A2": "JP"
+  },
+  {
+    "NAME": "Paraguay",
+    "ADMIN": "Paraguay",
+    "ISO_A3": "PRY",
+    "ADM0_A3": "PRY",
+    "ISO_A2": "PY"
+  },
+  {
+    "NAME": "Yemen",
+    "ADMIN": "Yemen",
+    "ISO_A3": "YEM",
+    "ADM0_A3": "YEM",
+    "ISO_A2": "YE"
+  },
+  {
+    "NAME": "Saudi Arabia",
+    "ADMIN": "Saudi Arabia",
+    "ISO_A3": "SAU",
+    "ADM0_A3": "SAU",
+    "ISO_A2": "SA"
+  },
+  {
+    "NAME": "Antarctica",
+    "ADMIN": "Antarctica",
+    "ISO_A3": "ATA",
+    "ADM0_A3": "ATA",
+    "ISO_A2": "AQ"
+  },
+  {
+    "NAME": "N. Cyprus",
+    "ADMIN": "Northern Cyprus",
+    "ISO_A3": "-99",
+    "ADM0_A3": "CYN",
+    "ISO_A2": "-99"
+  },
+  {
+    "NAME": "Cyprus",
+    "ADMIN": "Cyprus",
+    "ISO_A3": "CYP",
+    "ADM0_A3": "CYP",
+    "ISO_A2": "CY"
+  },
+  {
+    "NAME": "Morocco",
+    "ADMIN": "Morocco",
+    "ISO_A3": "MAR",
+    "ADM0_A3": "MAR",
+    "ISO_A2": "MA"
+  },
+  {
+    "NAME": "Egypt",
+    "ADMIN": "Egypt",
+    "ISO_A3": "EGY",
+    "ADM0_A3": "EGY",
+    "ISO_A2": "EG"
+  },
+  {
+    "NAME": "Libya",
+    "ADMIN": "Libya",
+    "ISO_A3": "LBY",
+    "ADM0_A3": "LBY",
+    "ISO_A2": "LY"
+  },
+  {
+    "NAME": "Ethiopia",
+    "ADMIN": "Ethiopia",
+    "ISO_A3": "ETH",
+    "ADM0_A3": "ETH",
+    "ISO_A2": "ET"
+  },
+  {
+    "NAME": "Djibouti",
+    "ADMIN": "Djibouti",
+    "ISO_A3": "DJI",
+    "ADM0_A3": "DJI",
+    "ISO_A2": "DJ"
+  },
+  {
+    "NAME": "Somaliland",
+    "ADMIN": "Somaliland",
+    "ISO_A3": "-99",
+    "ADM0_A3": "SOL",
+    "ISO_A2": "-99"
+  },
+  {
+    "NAME": "Uganda",
+    "ADMIN": "Uganda",
+    "ISO_A3": "UGA",
+    "ADM0_A3": "UGA",
+    "ISO_A2": "UG"
+  },
+  {
+    "NAME": "Rwanda",
+    "ADMIN": "Rwanda",
+    "ISO_A3": "RWA",
+    "ADM0_A3": "RWA",
+    "ISO_A2": "RW"
+  },
+  {
+    "NAME": "Bosnia and Herz.",
+    "ADMIN": "Bosnia and Herzegovina",
+    "ISO_A3": "BIH",
+    "ADM0_A3": "BIH",
+    "ISO_A2": "BA"
+  },
+  {
+    "NAME": "North Macedonia",
+    "ADMIN": "North Macedonia",
+    "ISO_A3": "MKD",
+    "ADM0_A3": "MKD",
+    "ISO_A2": "MK"
+  },
+  {
+    "NAME": "Serbia",
+    "ADMIN": "Republic of Serbia",
+    "ISO_A3": "SRB",
+    "ADM0_A3": "SRB",
+    "ISO_A2": "RS"
+  },
+  {
+    "NAME": "Montenegro",
+    "ADMIN": "Montenegro",
+    "ISO_A3": "MNE",
+    "ADM0_A3": "MNE",
+    "ISO_A2": "ME"
+  },
+  {
+    "NAME": "Kosovo",
+    "ADMIN": "Kosovo",
+    "ISO_A3": "-99",
+    "ADM0_A3": "KOS",
+    "ISO_A2": "-99"
+  },
+  {
+    "NAME": "Trinidad and Tobago",
+    "ADMIN": "Trinidad and Tobago",
+    "ISO_A3": "TTO",
+    "ADM0_A3": "TTO",
+    "ISO_A2": "TT"
+  },
+  {
+    "NAME": "S. Sudan",
+    "ADMIN": "South Sudan",
+    "ISO_A3": "SSD",
+    "ADM0_A3": "SDS",
+    "ISO_A2": "SS"
+  }
+]
