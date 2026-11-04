@@ -296,18 +296,32 @@ h1 {
   place-items: center;
 }
 .stream-button svg, .country-toggle svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+.country-toggle svg { width: 22px; height: 22px; stroke-width: 2.2; }
 .reset-filters {
+  appearance: none;
   min-height: 52px;
   padding: 0 18px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   background: transparent;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   white-space: nowrap;
 }
-.reset-filters:hover:not(:disabled) { background: rgba(255, 255, 255, 0.1); }
-.reset-filters:disabled { opacity: 0.4; cursor: default; }
+.reset-filters:not(:disabled) {
+  background: #A11915;
+  border-color: #A11915;
+  color: #FFFFFF;
+}
+.reset-filters:hover:not(:disabled) { background: #7d120f; border-color: #7d120f; }
+.reset-filters:focus-visible { outline: 2px solid #98D4E4; outline-offset: 3px; }
+.reset-filters:disabled {
+  opacity: 1;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
+  border-color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
 .stream-menu, .country-menu {
   position: absolute;
   z-index: 6;
